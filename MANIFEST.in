@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include biolis24i *.css
+recursive-include biolis24i *.csv
+recursive-include biolis24i *.html
+recursive-include biolis24i *.ico
+recursive-include biolis24i *.js
+recursive-include biolis24i *.json
+recursive-include biolis24i *.md
+recursive-include biolis24i *.png
+recursive-include biolis24i *.py
+recursive-include biolis24i *.svg
+recursive-include biolis24i *.txt
+recursive-exclude biolis24i *.pyc
