@@ -15,7 +15,7 @@ frappe.ui.form.on('Lab Test', {
       callback: function(r) {
           console.log("sql server response :: ", r.message)
         // Loop through the list of dictionaries in the response
-
+        frappe.model.set_value(d.doctype, d.name, "sample_id", r.message.SAMP_ID);
         $.each(cur_frm.doc.normal_test_items, function(i, d) {
           // Set the result to 0 by default
           frappe.model.set_value(d.doctype, d.name, "result_value", "N/A");
