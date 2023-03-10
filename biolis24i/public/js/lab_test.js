@@ -28,7 +28,7 @@ frappe.ui.form.on('Lab Test', {
                 r.message[i].RESULTS = "N/A";
               }
               console.log("Test name : ",d.lab_test_name," result updated : ",r.message[i].RESULTS)
-              frappe.model.set_value(frm.doc, frm.doc.name, "result_value", r.message[i].RESULTS);
+              frm.set_value('sample_id', 'r.SAM_ID');
               break;
             }
           }
